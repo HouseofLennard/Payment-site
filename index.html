@@ -3,24 +3,51 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Consulting Package - Payment Page</title>
+  <title>Secure Consulting Payment</title>
   <style>
-    body { font-family: sans-serif; text-align: center; padding: 50px; }
-    .qr { margin-top: 30px; }
-    img { max-width: 300px; }
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+      background: #f9f9f9;
+    }
+    h1 {
+      color: #333;
+    }
+    .qr-section {
+      margin: 30px auto;
+    }
+    .qr-code {
+      margin: 20px;
+    }
+    .qr-code img {
+      max-width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .footer {
+      margin-top: 50px;
+      font-size: 14px;
+      color: #888;
+    }
   </style>
 </head>
 <body>
-  <h1>Consulting & Research Package</h1>
-  <p>Scan below to make payment in RMB</p>
-  <div class="qr">
-    <img src="wechat-qr.png" alt="Scan to Pay via WeChat">
-    <p>WeChat Pay (¥9999)</p>
+  <h1>Secure Payment for Consulting Service</h1>
+  <p>Please scan one of the QR codes below to complete your payment.</p>
+
+  <div class="qr-section">
+    <div class="qr-code">
+      <h3>WeChat Pay (¥9988)</h3>
+      <img src="wechat-qr.png" alt="Scan with WeChat">
+    </div>
+
+    <div class="qr-code">
+      <h3>Alipay (¥9988)</h3>
+      <img src="alipay-qr.png" alt="Scan with Alipay">
+    </div>
   </div>
-  <div class="qr">
-    <img src="alipay-qr.png" alt="Scan to Pay via Alipay">
-    <p>Alipay (¥9999)</p>
-  </div>
-  <p style="margin-top: 40px;">After payment, you will receive your access package via email.</p>
+
+  <p class="footer">After payment, you will receive a confirmation via email.</p>
 </body>
 </html>
